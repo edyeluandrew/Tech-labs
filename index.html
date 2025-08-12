@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETA-TECH LABS | Digital Transformation & Innovation</title>
+    <meta name="description" content="BETA-TECH LABS builds transformative digital products and AI solutions that empower communities and shape the future.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <div class="loading-overlay" id="loading-overlay">
+        <div>
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading Alpine Environment...</div>
+        </div>
+    </div>
+    
+    
+    <canvas id="bg-canvas"></canvas>
+    
+    
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="BETA-TECH LABS Logo" id="site-logo">
+            </a>
+            <nav class="nav-links">
+                <div class="nav-item"><a href="#services">Services</a></div>
+                <div class="nav-item"><a href="#about">About</a></div>
+                <div class="nav-item"><a href="#values">Values</a></div>
+                <div class="nav-item"><a href="#objectives">Objectives</a></div>
+                <div class="nav-item"><a href="#team">Team</a></div>
+                <div class="nav-item"><a href="#contact">Contact</a></div>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    
+    <section class="hero" id="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="editable" data-target="hero-title">Dream it. Build it.</h1>
+                <p class="editable" data-target="hero-text">Your partner in digital transformation and innovation. We build intelligent technologies that solve real-world problems and empower people everywhere.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn btn-primary editable" data-target="hero-btn1">Our Services</a>
+                    <a href="#contact" class="btn btn-outline editable" data-target="hero-btn2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title editable" data-target="services-title">Our Core Services</h2>
+            <div class="services-grid">
+                <div class="service-card editable" data-target="service-1">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Software & App Development</h3>
+                    <p class="editable" data-target="service-text-1">Custom solutions tailored to your business needs with cutting-edge technologies.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="service-card editable" data-target="service-2">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Solutions & Integration</h3>
+                    <p class="editable" data-target="service-text-2">Transform your operations with intelligent automation and machine learning.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="service-card editable" data-target="service-3">
+                    <div class="service-icon"><i class="fas fa-link"></i></div>
+                    <h3>Blockchain Technology</h3>
+                    <p class="editable" data-target="service-text-3">Secure, decentralized solutions for the modern digital economy.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="service-card editable" data-target="service-4">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>IT & Computer Repair</h3>
+                    <p class="editable" data-target="service-text-4">Expert technical support to keep your systems running smoothly.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="service-card editable" data-target="service-5">
+                    <div class="service-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Internship Opportunities</h3>
+                    <p class="editable" data-target="service-text-5">Hands-on experience for the next generation of tech innovators.</p>
+                    <div class="card-wave"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title editable" data-target="about-title">Our Story</h2>
+                <p class="editable" data-target="about-text1">BETA-TECH LABS was founded by a team of four driven students who first came together during AI FEST 2025. Collaborating for a hackathon, we developed an AI-powered pest and disease detector.</p>
+                <p class="editable" data-target="about-text2">Inspired by that success and united by a shared vision, we decided to merge our diverse skills and talents to build innovative technology products that will make a global impact.</p>
+                <p class="editable" data-target="about-text3">We are a committed, supportive team of bright minds focused on shaping a brighter future through technology. What keeps us moving forward is our passion for continuous learning and the acceptance that growth comes from embracing new knowledge every day.</p>
+                <p class="editable" data-target="about-text4">Our ambition is sky-high — we're aiming for the moon, but even if we don't reach it, we know we will still land among the stars.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="vision-mission section" id="vision-mission-section">
+        <div class="container">
+            <div class="vision-mission-content">
+                <h2 class="editable" data-target="vm-title">Our Vision & Mission</h2>
+                <div class="vm-card editable" data-target="vision-card">
+                    <div class="vm-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Vision</h3>
+                    <p class="editable" data-target="vision-text">To become a globally recognized technology leader by building transformative digital products and solutions that empower communities, fuel innovation, and shape the future.</p>
+                </div>
+                <div class="vm-card editable" data-target="mission-card">
+                    <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Mission</h3>
+                    <p class="editable" data-target="mission-text">To build intelligent technologies that solve real-world problems, drive digital transformation, and empower people everywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="values" class="values section">
+        <div class="container">
+            <h2 class="section-title editable" data-target="values-title">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card editable" data-target="value-1">
+                    <div class="value-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Innovation</h3>
+                    <p class="editable" data-target="value-text-1">We push technological boundaries to create transformative solutions.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="value-card editable" data-target="value-2">
+                    <div class="value-icon"><i class="fas fa-search"></i></div>
+                    <h3>Integrity</h3>
+                    <p class="editable" data-target="value-text-2">We uphold the highest standards of honesty and accountability.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="value-card editable" data-target="value-3">
+                    <div class="value-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Responsibility</h3>
+                    <p class="editable" data-target="value-text-3">We ensure our solutions are ethical, inclusive and socially responsible.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="value-card editable" data-target="value-4">
+                    <div class="value-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Excellence</h3>
+                    <p class="editable" data-target="value-text-4">We strive for quality and precision in everything we deliver.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="value-card editable" data-target="value-5">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Collaboration</h3>
+                    <p class="editable" data-target="value-text-5">Great innovation is built together through teamwork.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="value-card editable" data-target="value-6">
+                    <div class="value-icon"><i class="fas fa-magic"></i></div>
+                    <h3>Impact</h3>
+                    <p class="editable" data-target="value-text-6">We solve real-world problems and create global value.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="value-card editable" data-target="value-7">
+                    <div class="value-icon"><i class="fas fa-book"></i></div>
+                    <h3>Learning & Growth</h3>
+                    <p class="editable" data-target="value-text-7">We foster continuous learning in a rapidly changing tech landscape.</p>
+                    <div class="card-wave"></div>
+                </div>
+                <div class="value-card editable" data-target="value-8">
+                    <div class="value-icon"><i class="fas fa-universal-access"></i></div>
+                    <h3>Accessibility</h3>
+                    <p class="editable" data-target="value-text-8">We make technology useful and accessible to everyone.</p>
+                    <div class="card-wave"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="objectives" class="objectives section">
+        <div class="container">
+            <h2 class="section-title editable" data-target="objectives-title">Our Objectives</h2>
+            <div class="objectives-list">
+                <div class="objective-item editable" data-target="objective-1">
+                    <div class="objective-number">1</div>
+                    <div class="objective-content">
+                        <h3 class="editable" data-target="objective-title-1">Deliver High-Quality Tech Services</h3>
+                        <p class="editable" data-target="objective-text-1">Provide reliable, efficient, and innovative services in software development, AI integration, blockchain, and IT repair to meet current client needs and generate sustainable income.</p>
+                    </div>
+                </div>
+                <div class="objective-item editable" data-target="objective-2">
+                    <div class="objective-number">2</div>
+                    <div class="objective-content">
+                        <h3 class="editable" data-target="objective-title-2">Develop a Scalable Global Product</h3>
+                        <p class="editable" data-target="objective-text-2">Research, design, and launch a flagship technology product that solves a major real-world problem and gains global adoption.</p>
+                    </div>
+                </div>
+                <div class="objective-item editable" data-target="objective-3">
+                    <div class="objective-number">3</div>
+                    <div class="objective-content">
+                        <h3 class="editable" data-target="objective-title-3">Promote Ethical Technology Use</h3>
+                        <p class="editable" data-target="objective-text-3">Ensure all solutions are built with ethical principles in mind, minimizing negative impacts while promoting fairness, inclusivity, and sustainability.</p>
+                    </div>
+                </div>
+                <div class="objective-item editable" data-target="objective-4">
+                    <div class="objective-number">4</div>
+                    <div class="objective-content">
+                        <h3 class="editable" data-target="objective-title-4">Empower Youth Through Training</h3>
+                        <p class="editable" data-target="objective-text-4">Offer mentorship, internship opportunities, and capacity-building programs to equip the next generation of tech innovators — especially in Africa.</p>
+                    </div>
+                </div>
+                <div class="objective-item editable" data-target="objective-5">
+                    <div class="objective-number">5</div>
+                    <div class="objective-content">
+                        <h3 class="editable" data-target="objective-title-5">Build a Strong Digital Presence</h3>
+                        <p class="editable" data-target="objective-text-5">Establish BETA-TECH LABS as a trusted tech brand through branding, content, social media engagement, and thought leadership.</p>
+                    </div>
+                </div>
+                <div class="objective-item editable" data-target="objective-6">
+                    <div class="objective-number">6</div>
+                    <div class="objective-content">
+                        <h3 class="editable" data-target="objective-title-6">Foster Strategic Partnerships</h3>
+                        <p class="editable" data-target="objective-text-6">Collaborate with academic institutions, startups, and tech organizations to expand impact, share knowledge, and scale innovation.</p>
+                    </div>
+                </div>
+                <div class="objective-item editable" data-target="objective-7">
+                    <div class="objective-number">7</div>
+                    <div class="objective-content">
+                        <h3 class="editable" data-target="objective-title-7">Continuously Innovate</h3>
+                        <p class="editable" data-target="objective-text-7">Stay ahead of emerging technologies by investing in R&D, attending tech events, and fostering a culture of creativity and experimentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="team" class="team section">
+    <div class="container">
+        <h2 class="section-title editable" data-target="team-title">Our Founders</h2>
+        <div class="team-grid">
+            <div class="team-member editable" data-target="member-1">
+                <div class="team-member-image" style="background-image: url('images/alouzious.jpg')">
+                    <div class="member-overlay">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Alouzious Muhereza</h3>
+                <p class="editable" data-target="member-role-1">Co-Founder & CEO</p>
+            </div>
+            <div class="team-member editable" data-target="member-2">
+                <div class="team-member-image" style="background-image: url('images/aliho.jpg')">
+                    <div class="member-overlay">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/alouzious-muhereza-89116b328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/alouzious?t=HNlRGuZ5r4U9KhzoDiKJSA&s=09"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/Alouzious"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Aliho Gilbert</h3>
+                <p class="editable" data-target="member-role-2">Co-Founder & CTO</p>
+            </div>
+            <div class="team-member editable" data-target="member-3">
+                <div class="team-member-image" style="background-image: url('images/edyelu.jpg')">
+                    <div class="member-overlay">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Edyelu Andrew</h3>
+                <p class="editable" data-target="member-role-3">Co-Founder & Lead Developer</p>
+            </div>
+            <div class="team-member editable" data-target="member-4">
+                <div class="team-member-image" style="background-image: url('images/ahmed.jpg')">
+                    <div class="member-overlay">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Ahmed Umar Khemis</h3>
+                <p class="editable" data-target="member-role-4">Co-Founder & Product Manager</p>
+            </div>
+        </div>
+    </div>
+</section>
+   
+    <section class="cta" id="cta-section">
+        <div class="container">
+            <h2 class="editable" data-target="cta-title">Ready to Transform Your Business?</h2>
+            <p class="editable" data-target="cta-text">Let's build something amazing together. Get in touch with our team to discuss how we can help bring your ideas to life.</p>
+            <a href="#contact" class="btn btn-primary editable" data-target="cta-btn">Contact Us</a>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title editable" data-target="contact-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item editable" data-target="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        <p>projectbeta@gmail.com</p>
+                    </div>
+                    <div class="info-item editable" data-target="contact-phone">
+                        <i class="fas fa-phone"></i>
+                        <p>+256791018086</p>
+                    </div>
+                    <div class="info-item editable" data-target="contact-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Kabale, Uganda</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="editable" data-target="social-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="editable" data-target="social-linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="editable" data-target="social-github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="editable" data-target="social-instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer id="footer-section">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo editable" data-target="footer-logo">BETA<span>TECH</span></div>
+                    <p class="footer-motto editable" data-target="footer-motto">"Dream it. Build it. Don't dream it if you don't want to build it."</p>
+                    <p class="editable" data-target="footer-text">Building transformative digital products and solutions that empower communities and shape the future.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#values">Our Values</a></li>
+                        <li><a href="#objectives">Objectives</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#">AI Solutions</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">IT Repair</a></li>
+                        <li><a href="#">Internships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> projectbeta@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +256791018086</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright editable" data-target="copyright-text">
+                &copy; 2025 BETA-TECH LABS. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/three-animations.js"></script>
+</body>
+</html>
